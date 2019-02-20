@@ -24,6 +24,10 @@
       flex-direction:row;
       justify-content:space-between;
     }
+    #hora{
+      font-family: Arial;
+      font-size: 11px;
+    }
     .flexitem{
       flex-basis:45.06px;
     }
@@ -53,100 +57,79 @@
 
     div.chat
     {
-      display:grid;
+      display:flex;
+      flex-direction:row;
+      justify-content:space-between;
       padding-top: 10px;
     }
     .foto
     {
-      grid-row-start:1;
-      grid-row-end:4;
-      grid-column-start:1;
-      grid-column-end:2;
       border-radius:28px;
       overflow:hidden;
       width:56px;
       height:56px;
     }
+    .contenido{
+      flex-grow: 1;
+      flex-direction:column;
+      justify-content:space-between;
+      border-bottom: solid 1px #b2b2b2;
+      margin-left: 10px;
+    }
     .nombre_chat
     {
-      grid-row-start:1;
-      grid-row-end:2;
-      grid-column-start:2;
-      grid-column-end:3;
       font-family: Arial;
       font-size: 16px;
       font-weight: bold;
     }
     .nombre
     {
-      grid-row-start:2;
-      grid-row-end:3;
-      grid-column-start:2;
-      grid-column-end:3;
       font-family: Arial;
       font-size: 16px;
     }
     .msg
     {
-      grid-row-start:3;
-      grid-row-end:4;
-      grid-column-start:2;
-      grid-column-end:3;
       font-family: Arial;
       font-size: 16px;
       color:#8e8e93;
       padding-bottom: 10px;
+    }
+    .datos{
+      flex-grow: 1;
+      display: flex;
+      flex-direction:column;
+      justify-content:space-between;
       border-bottom: solid 1px #b2b2b2;
     }
     .hora
     {
-      grid-row-start:1;
-      grid-row-end:2;
-      grid-column-start:3;
-      grid-column-end:4;
       font-family: Arial;
       font-size: 16px;
       color:#8e8e93;
     }
     .icon_num_msg
     {
-      display: grid;
-      grid-row-start:2;
-      grid-row-end:3;
-      grid-column-start:3;
-      grid-column-end:4;
       font-family: Arial;
       font-size: 12px;
       color:white;
+      display: flex;
+      flex-direction:row;
+      justify-content:flex-end;
     }
     .vacio{
-      grid-row-start:3;
-      grid-row-end:4;
-      grid-column-start:3;
-      grid-column-end:4;
-      padding-bottom: 28px;
-      border-bottom: solid 1px #b2b2b2;
+      padding-bottom: 20px;
     }
     #numero_msg{
-      grid-row-start:1;
-      grid-row-end:2;
-      grid-column-start:1;
-      grid-column-end:2;
-      border-radius:10px;
+      height:18px;
+      border-radius:9px;
+      padding-left: 6px;
+      padding-right: 6px;
       overflow:hidden;
       background-color: #0A82FC;
-      line-height:20px;
+      line-height:18px;
       text-align: center;
     }
     #flecha{
-      grid-row-start:1;
-      grid-row-end:2;
-      grid-column-start:2;
-      grid-column-end:6;
-    }
-    #hora{
-      font-family: Arial;
-      font-size: 11px;
     }
     nav{
       height:49px;
@@ -205,12 +188,185 @@
 
       <div class="chat">
         <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
-        <div class="nombre_chat">Videojuegos</div>
-        <div class="nombre">Ivan:</div>
-        <div class="msg">¿Quien juega hoy?</div>
-        <div class="hora">11:26 p.m.</div>
-        <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
-        <div class="vacio"></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="foto"><img class="foto"src="icons\foto_perfil.png" alt=""></div>
+        <div class="contenido">
+          <div class="nombre_chat">Videojuegos</div>
+          <div class="nombre">Ivan:</div>
+          <div class="msg">¿Quien juega hoy?</div>
+        </div>
+        <div class="datos">
+          <div class="hora">11:26 p.m.</div>
+          <div class="icon_num_msg"><div id="numero_msg">4</div><img id="flecha"src="icons\cell-accessory.png" alt=""></div>
+          <div class="vacio"></div>
+        </div>
       </div>
 
 
